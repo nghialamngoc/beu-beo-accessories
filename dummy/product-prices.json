@@ -1,0 +1,31 @@
+[
+  {
+    "sku": "kl-1",
+    "prices": {
+      "initialPrice": 230000,
+      "discountPrice": 150000,
+      "flashSalePrice": 120000
+    }
+  },
+  {
+    "sku": "kl-2",
+    "prices": {
+      "initialPrice": 150000,
+      "discountPrice": 110000
+    }
+  },
+  {
+    "sku": "kt-1",
+    "prices": {
+      "initialPrice": 50000,
+      "discountPrice": 30000
+    }
+  },
+  {
+    "sku": "kt-2",
+    "prices": {
+      "initialPrice": 60000,
+      "discountPrice": 40000
+    }
+  }
+]

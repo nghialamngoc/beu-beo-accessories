@@ -1,0 +1,41 @@
+[
+  {
+    "type": "CategoryModule",
+    "data": {
+      "title": "Khăn lụa",
+      "collection": "khan-lua",
+      "items": [
+        "kl-1-1",
+        "kl-1-2",
+        "kl-1-3",
+        "kl-1-4",
+        "kl-2-1",
+        "kl-2-2",
+        "kl-2-3",
+        "kl-2"
+      ]
+    }
+  },
+  {
+    "type": "CategoryModule",
+    "data": {
+      "title": "Kẹp tóc",
+      "collection": "kep-toc",
+      "items": [
+        "kt-1-1",
+        "kt-1-2",
+        "kt-2"
+      ]
+    }
+  },
+  {
+    "type": "BlogModule",
+    "data": {
+      "title": "Bài viết",
+      "collection": "bai-viet",
+      "items": [
+        "y-nghia-cua-viec-tang-khan-quang-co"
+      ]
+    }
+  }
+]

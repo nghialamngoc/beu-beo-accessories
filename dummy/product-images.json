@@ -1,0 +1,97 @@
+[
+  {
+    "sku": "kl-1-1",
+    "parentSKU": "kl-1",
+    "imageUrl": "/kl-1/kl-1-1.jpg"
+  },
+  {
+    "sku": "kl-1-2",
+    "parentSKU": "kl-1",
+    "imageUrl": "/kl-1/kl-1-4.jpeg"
+  },
+  {
+    "sku": "kl-1-3",
+    "parentSKU": "kl-1",
+    "imageUrl": "/kl-1/kl-1-3.jpeg"
+  },
+  {
+    "sku": "kl-1-4",
+    "parentSKU": "kl-1",
+    "imageUrl": "/kl-1/kl-1-4.jpeg"
+  },
+  {
+    "sku": "kl-1",
+    "parentSKU": "kl-1",
+    "imageUrl": "/kl-1/kl-1-a.jpeg",
+    "imageUrls": [
+      "/kl-1/kl-1-a.jpeg",
+      "/kl-1/kl-1-b.jpeg"
+    ]
+  },
+  {
+    "sku": "kl-2-1",
+    "parentSKU": "kl-2",
+    "imageUrl": "/kl-2/kl-2-1.jpeg"
+  },
+  {
+    "sku": "kl-2-2",
+    "parentSKU": "kl-2",
+    "imageUrl": "/kl-2/kl-2-4.jpeg"
+  },
+  {
+    "sku": "kl-2-3",
+    "imageUrl": "/kl-2/kl-2-3.jpeg"
+  },
+  {
+    "sku": "kl-2-4",
+    "parentSKU": "kl-2",
+    "imageUrl": "/kl-2/kl-2-4.jpeg"
+  },
+  {
+    "sku": "kl-2",
+    "parentSKU": "kl-2",
+    "imageUrl": "/kl-2/kl-2-a.jpeg",
+    "imageUrls": [
+      "/kl-2/kl-2-a.jpeg",
+      "/kl-2/kl-2-b.jpeg"
+    ]
+  },
+  {
+    "sku": "kt-1-1",
+    "parentSKU": "kt-1",
+    "imageUrl": "/kt-1/kt-1-1.jpeg"
+  },
+  {
+    "sku": "kt-1-2",
+    "parentSKU": "kt-1",
+    "imageUrl": "/kt-1/kt-1-2.jpeg"
+  },
+  {
+    "sku": "kt-1",
+    "parentSKU": "kt-1",
+    "imageUrl": "/kt-1/kt-1-a.jpeg",
+    "imageUrls": [
+      "/kt-1/kt-1-a.jpeg",
+      "/kt-1/kt-1-b.jpeg"
+    ]
+  },
+  {
+    "sku": "kt-2-1",
+    "parentSKU": "kt-2",
+    "imageUrl": "/kt-2/kt-2-1.jpeg"
+  },
+  {
+    "sku": "kt-2-2",
+    "parentSKU": "kt-2",
+    "imageUrl": "/kt-2/kt-2-2.jpeg"
+  },
+  {
+    "sku": "kt-2",
+    "parentSKU": "kt-2",
+    "imageUrl": "/kt-2/kt-2-a.jpeg",
+    "imageUrls": [
+      "/kt-2/kt-2-a.jpeg",
+      "/kt-2/kt-2-b.jpeg"
+    ]
+  }
+]

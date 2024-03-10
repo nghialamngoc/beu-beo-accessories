@@ -1,0 +1,58 @@
+.root {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+}
+
+.root > button {
+  border: 0;
+  outline: 0;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.root[data-color-scheme="light"] > button {
+  background-color: #EDEFF0;
+}
+
+.root[data-color-scheme="dark"] > button {
+  background-color: #F3BB90;
+}
+
+.root[data-color-scheme="light-dark"] > button {
+  background-color: #B3B6B8;
+}
+
+/* Variant: default */
+.root[data-variant="default"] > button {
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+}
+
+.root[data-variant="default"] > button[data-active="true"] {
+  width: 32px;
+  border-radius: 5px;
+  background-color: var(--color-primary);
+}
+
+/* Variant: dot */
+.root[data-variant="dot"] > button {
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+}
+
+.root[data-variant="dot"] > button[data-active="true"] {
+  background-color: var(--color-primary);
+}
+
+.root[data-color-scheme="dark"] > button[data-active="true"] {
+  background-color: var(--color-white);
+}
+
+.root[data-color-scheme="light-dark"] > button[data-active="true"] {
+  background-color: var(--color-primary);
+}
