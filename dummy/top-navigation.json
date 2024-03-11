@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Khăn lụa",
+    "href": "khan-lua",
+    "target": "",
+    "children": [
+      {
+        "title": "Kích thước 6 * 12",
+        "href": "/khan-lua?size=6*12"
+      },
+      {
+        "title": "Kích thước 53 * 53",
+        "href": "/khan-lua?size=53*53"
+      }
+    ]
+  },
+  {
+    "title": "Kẹp tóc",
+    "href": "kep-toc",
+    "target": ""
+  },
+  {
+    "title": "Liên hệ",
+    "href": "lien-he",
+    "target": ""
+  },
+  {
+    "title": "Bài viết",
+    "href": "bai-viet",
+    "target": ""
+  }
+]

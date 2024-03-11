@@ -5,7 +5,7 @@
 
 .slide {
   position: relative;
-  height: 400px;
+  height: 300px;
 }
 
 .grid {
@@ -17,18 +17,29 @@
 
 .dots {
   position: absolute;
-  right: 10%;
+  right: 5%;
   top: 50%;
   display: flex;
   flex-direction: column;
 }
 
-.dots [data-active="false"] {
+.dots [data-active='false'] {
   background-color: var(--color-grey-light);
 }
 
-.dots [data-active="true"] {
+.dots [data-active='true'] {
   background-color: var(--color-primary);
   height: 20px !important;
   width: 8px !important;
+}
+
+@mixin media md {
+  .slide {
+    position: relative;
+    height: 400px;
+  }
+
+  .dots {
+    right: 10%;
+  }
 }

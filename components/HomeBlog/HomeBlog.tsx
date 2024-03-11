@@ -33,7 +33,7 @@ export const HomeBlog: FC<HomeBlogProps> = (props) => {
           </Link>
         </div>
       </div>
-      <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-32 mt-24">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-32 mt-24">
         {items
           .reduce((pre, current) => {
             const product = blogJson.find((x) => x.id === current)
@@ -41,7 +41,7 @@ export const HomeBlog: FC<HomeBlogProps> = (props) => {
           }, [] as IBlog[])
           .map(({ id, title, banner, createdDate }, index) => {
             return (
-              <div key={index}>
+              <div key={index} className="shadow rounded-[10px] p-10">
                 <div className="relative h-[200px]">
                   <Image className="object-contain" src={banner ?? ''} fill alt="product image" />
                 </div>
