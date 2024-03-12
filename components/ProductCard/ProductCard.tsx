@@ -1,19 +1,17 @@
 import { FC } from 'react'
 import Image from 'next/image'
 import Link from '@/components/Link'
-import { PATH_COLLECTION_DETAIL } from '@/config'
+import { PATH_COLLECTION_DETAIL } from '@/config/paths'
 import { toPath } from '@/utils/url'
-import { IProduct, IProductImage, IProductPrice } from '@/types'
+import { IProduct } from '@/types'
 import { PriceV1 } from '@/components/Price'
+import { useTranslation } from '@/hooks/use-translation'
 
-export interface ProductCardProps extends IProduct {
-  images: IProductImage
-  prices: IProductPrice
-}
+export interface ProductCardProps extends IProduct {}
 
-export const ProductCard: FC<ProductCardProps> = ({
+export const ProductCard: FC<ProductCardProps> = async ({
   collection,
-  images,
+  imageUrl,
   parentSKU,
   sku,
   title,
@@ -21,14 +19,15 @@ export const ProductCard: FC<ProductCardProps> = ({
   material,
   prices,
 }) => {
+  const t = useTranslation()
+
   return (
-    <div className="shadow rounded-[10px] p-10">
+    <div className="shadow rounded-[10px] p-10 pb-20">
       <div className="relative h-[200px] hover:scale-105">
-        <Image className="object-contain" src={images.imageUrl ?? ''} fill alt="product image" />
+        <Image className="object-contain" src={imageUrl ?? ''} fill alt="product image" />
       </div>
       <div>
         <Link
-          target={images.target}
           href={toPath(PATH_COLLECTION_DETAIL, {
             params: {
               collection,
@@ -47,8 +46,8 @@ export const ProductCard: FC<ProductCardProps> = ({
         </Link>
 
         <div className="flex flex-col gap-2 text-12 mt-4">
-          {size && <div>Kích thước: {size}</div>}
-          {material && <div>Chất liệu: {material}</div>}
+          {size && <div>Kích thước: {t(size)}</div>}
+          {material && <div>Chất liệu: {t(material)}</div>}
         </div>
 
         <div className="mt-10">

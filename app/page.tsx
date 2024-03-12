@@ -2,7 +2,9 @@ import Banner from '@/components/Banner'
 import Footer from '@/components/Footer'
 import clsx from 'clsx'
 import dynamic from 'next/dynamic'
-import data from '@/dummy/home-data.json'
+import queryString from 'query-string'
+import { PATH_API_HOME } from '@/config/paths'
+import { Locale } from '@/config/common'
 
 const KEYS = {
   CATEGORY_MODULE: 'CategoryModule',
@@ -14,14 +16,25 @@ const SECTION_COMPONENTS = {
   [KEYS.BLOG_MODULE]: dynamic(() => import('@/components/HomeBlog')),
 }
 
-export default function Home() {
-  const homeData = data
+export default async function Home({ params: { lang } }: { params: { lang: Locale } }) {
+  const homeData = await fetch(
+    queryString.stringifyUrl({
+      url: process.env.BASE_URL + PATH_API_HOME,
+    }),
+    {
+      next: {
+        revalidate: 60,
+      },
+    }
+  )
+
+  const data = await homeData.json()
 
   return (
     <main>
       <Banner />
       <div className="flex flex-col">
-        {homeData.map((item, index) => {
+        {data.map((item: any, index: number) => {
           const Component = SECTION_COMPONENTS[item.type]
 
           if (!Component) {
@@ -32,7 +45,7 @@ export default function Home() {
             <div
               className={clsx(
                 'pb-40 px-16 mx-auto w-full max-w-screen-xl mt-32',
-                index !== homeData.length - 1 && 'border-b-2'
+                index !== data.length - 1 && 'border-b-2'
               )}
               key={index}
             >

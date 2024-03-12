@@ -1,8 +1,15 @@
-export interface IProduct {
+export interface IProduct extends IProductInfo {
   sku: string
   parentSKU?: string
   title?: string
   collection: string
+  quantity: number
+  prices: IProductPrice
+  imageUrl?: string
+  imageUrls?: string[]
+}
+
+export interface IProductInfo {
   size?: string
   material?: string
 }
