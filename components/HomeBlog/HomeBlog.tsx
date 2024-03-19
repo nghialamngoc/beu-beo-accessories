@@ -5,7 +5,6 @@ import Link from '../Link'
 import { toPath } from '@/utils/url'
 import { PATH_BLOG, PATH_BLOG_DETAIL } from '@/config/paths'
 import Image from 'next/image'
-import blogJson from '@/dummy/blog.json'
 
 interface HomeBlogProps {
   title: string

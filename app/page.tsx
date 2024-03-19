@@ -4,7 +4,6 @@ import clsx from 'clsx'
 import dynamic from 'next/dynamic'
 import queryString from 'query-string'
 import { PATH_API_HOME } from '@/config/paths'
-import { Locale } from '@/config/common'
 
 const KEYS = {
   CATEGORY_MODULE: 'CategoryModule',
@@ -16,7 +15,7 @@ const SECTION_COMPONENTS = {
   [KEYS.BLOG_MODULE]: dynamic(() => import('@/components/HomeBlog')),
 }
 
-export default async function Home({ params: { lang } }: { params: { lang: Locale } }) {
+export default async function Home() {
   const homeData = await fetch(
     queryString.stringifyUrl({
       url: process.env.BASE_URL + PATH_API_HOME,

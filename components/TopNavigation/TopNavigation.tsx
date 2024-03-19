@@ -14,7 +14,7 @@ export const TopNavigation: FC<TopNavigationProps> = async () => {
     }),
     {
       next: {
-        revalidate: 60 * 60,
+        revalidate: 60,
       },
     }
   )

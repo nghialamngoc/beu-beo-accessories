@@ -70,6 +70,17 @@ const config: Config = {
       '60': ['3.75rem', '1'],
     },
 
+    borderRadius: {
+      none: '0',
+      full: '9999px',
+      '2': '0.125rem',
+      '4': '0.25rem',
+      '8': '0.5rem',
+      '12': '0.75rem',
+      '16': '1rem',
+      '24': '1.5rem',
+    },
+
     colors: {
       inherit: colors.inherit,
       current: colors.current,

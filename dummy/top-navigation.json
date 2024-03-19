@@ -1,7 +1,7 @@
 [
   {
     "title": "Khăn lụa",
-    "href": "khan-lua",
+    "href": "/khan-lua",
     "target": "",
     "children": [
       {
@@ -16,17 +16,17 @@
   },
   {
     "title": "Kẹp tóc",
-    "href": "kep-toc",
+    "href": "/kep-toc",
     "target": ""
   },
   {
     "title": "Liên hệ",
-    "href": "lien-he",
+    "href": "/lien-he",
     "target": ""
   },
   {
     "title": "Bài viết",
-    "href": "bai-viet",
+    "href": "/bai-viet",
     "target": ""
   }
 ]
