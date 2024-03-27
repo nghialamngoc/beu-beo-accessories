@@ -1,16 +1,16 @@
 [
   {
-    "title": "Khăn lụa",
-    "href": "/khan-lua",
+    "title": "Khăn Choàng",
+    "href": "/khan-choang",
     "target": "",
     "children": [
       {
         "title": "Kích thước 6 * 12",
-        "href": "/khan-lua?size=6*12"
+        "href": "/khan-choang?sizes=6*12"
       },
       {
         "title": "Kích thước 53 * 53",
-        "href": "/khan-lua?size=53*53"
+        "href": "/khan-choang?sizes=53*53"
       }
     ]
   },
